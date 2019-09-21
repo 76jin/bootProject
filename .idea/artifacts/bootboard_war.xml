@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bootboard:war">
+    <output-path>$PROJECT_DIR$/bootboard/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bootboard</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="bootboard-0.0.1.war">
+      <element id="artifact" artifact-name="bootboard:war exploded" />
+    </root>
+  </artifact>
+</component>
