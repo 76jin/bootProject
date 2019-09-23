@@ -5,9 +5,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -133,5 +139,88 @@ public class BoardRepositoryTest {
         Collection<Board> results = boardRepository.findByBnoGreaterThanOrderByBnoDesc(90L);
 
         results.forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testBnoOrderByPaging() {
+
+        Pageable paging = PageRequest.of(0, 10);
+
+        Collection<Board> results = boardRepository.findByBnoGreaterThanOrderByBnoDesc(0L, paging);
+
+        results.forEach(board -> System.out.println(board));
+    }
+/*
+
+    @Test
+    public void testBnoPagingSort() {
+
+        Pageable paging = PageRequest.of(0, 10, Sort.Direction.ASC, "bno");
+
+        Collection<Board> results = boardRepository.findByBnoGreaterThan(0L, paging);
+
+        results.forEach(board -> System.out.println(board));
+    }
+
+*/
+    @Test
+    public void testBnoPagingSortAndPageTypeTest() {
+
+        Pageable paging = PageRequest.of(0, 10, Sort.Direction.ASC, "bno");
+
+        Page<Board> result = boardRepository.findByBnoGreaterThan(0L, paging);
+
+        System.out.println("PAGE SIZE:" + result.getSize());
+        System.out.println("TOTAL PAGES:" + result.getTotalPages());
+        System.out.println("TOTAL COUNT:" + result.getTotalElements());
+        System.out.println("NEXT:" + result.nextPageable());
+
+        List<Board> list = result.getContent();
+
+        list.forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByTitleWithJPQL() {
+
+        boardRepository.findByTitle("17")
+                .forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByContentWithJPQL() {
+
+        boardRepository.findByContent("18")
+                .forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByWriterWithJPQL() {
+
+        boardRepository.findByWriter("user09")
+                .forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByTitle2() {
+
+        boardRepository.findByTitle2("17")
+                .forEach(object -> System.out.println(Arrays.toString(object)));
+    }
+
+    @Test
+    public void testByTitle3() {
+
+        boardRepository.findByTitle3("18")
+                .forEach(objects -> System.out.println(Arrays.toString(objects)));
+    }
+
+    @Test
+    public void testByPaging() {
+
+        Pageable pageable = PageRequest.of(0, 10);
+
+        boardRepository.findByPage(pageable)
+                .forEach(board -> System.out.println(board));
     }
 }
