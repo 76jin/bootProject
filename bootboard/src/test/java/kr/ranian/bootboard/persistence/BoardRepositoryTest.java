@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Collection;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -87,5 +88,50 @@ public class BoardRepositoryTest {
             board.setWriter("user0" + (i%10));
             boardRepository.save(board);
         }
+    }
+
+    @Test
+    public void testByTitle() {
+
+        boardRepository.findBoardByTitle("제목..177")
+                .forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByWriter() {
+
+        Collection<Board> results = boardRepository.findByWriter("user00");
+
+        results.forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByWriterContaining() {
+
+        Collection<Board> results = boardRepository.findByWriterContaining("05");
+
+        results.forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByTitleContainingOrContentContaining() {
+        Collection<Board> results = boardRepository.findByTitleContainingOrContentContaining("06", "07");
+
+        results.forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testByTitleAndBno() {
+        Collection<Board> results = boardRepository.findByTitleContainingAndBnoGreaterThan("5", 50L);
+
+        results.forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testBnoOrderBy() {
+
+        Collection<Board> results = boardRepository.findByBnoGreaterThanOrderByBnoDesc(90L);
+
+        results.forEach(board -> System.out.println(board));
     }
 }
