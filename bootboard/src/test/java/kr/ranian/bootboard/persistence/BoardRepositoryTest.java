@@ -77,4 +77,15 @@ public class BoardRepositoryTest {
         System.out.println("DELETE Test");
         boardRepository.deleteById(1L);
     }
+
+    @Test
+    public void testInsert200() {
+        for (int i = 1; i <= 200; i++) {
+            Board board = new Board();
+            board.setTitle("제목.." + i);
+            board.setContent("내용 ..." + i + " 채우기");
+            board.setWriter("user0" + (i%10));
+            boardRepository.save(board);
+        }
+    }
 }
