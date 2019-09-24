@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ce2018a-9cbe-43f4-9cb8-68ca73db1a22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_ulisesbocchio_jasypt_spring_boot_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_ulisesbocchio_jasypt_spring_boot_starter_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasypt_jasypt_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootboard/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bootboard/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootboard/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bootboard/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bootboard_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bootboard_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootboard/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/persistence/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/persistence/BoardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/persistence/BoardRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/persistence/BoardRepositoryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bootboard/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,25 +16,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/BootboardApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding>
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bootboard/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -42,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/domain/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="284">
+              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootboard/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="270">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -72,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/persistence/BoardRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/persistence/BoardRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="115">
+              <caret line="229" column="33" lean-forward="true" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/utils/JasyptTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="150">
               <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootboard/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="239">
+              <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -130,6 +117,7 @@
       <find>algo</find>
       <find>encrypted.properties</find>
       <find>jasypt.encryptor.bean=encryptorBean</find>
+      <find>web</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,17 +126,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/bootboard/pom.xml" />
         <option value="$PROJECT_DIR$/bootboard/src/main/resources/encrypted.properties" />
         <option value="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/PropertyServiceForJasyptStarter.java" />
         <option value="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/AppConfigForJasyptStarter.java" />
         <option value="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/BootboardApplication.java" />
         <option value="$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/utils/JasyptTest.java" />
+        <option value="$PROJECT_DIR$/bootboard/.gitignore" />
+        <option value="$PROJECT_DIR$/bootboard/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/bootboard/pom.xml" />
         <option value="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/domain/Board.java" />
         <option value="$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/persistence/BoardRepository.java" />
         <option value="$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/persistence/BoardRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/bootboard/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/bootboard/.gitignore" />
       </list>
     </option>
   </component>
@@ -172,11 +160,10 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,39 +229,79 @@
             <path>
               <item name="BootProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="bootboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BootProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bootboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BootProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BootProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootboard" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="bootboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="bootboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="${target}" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="bootboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="${target}" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="target" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="bootboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="${target}" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="target" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="generated-sources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="bootboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="${target}" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="target" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="generated-sources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="BootProject" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="bootboard" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="${target}" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="target" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="generated-sources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="kr.ranian.bootboard.domain" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BootProject" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bootboard" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,7 +312,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569076435516" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569308563353" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
@@ -317,8 +344,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BootboardApplication">
-    <configuration name="BoardRepositoryTest.inspect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BoardRepositoryTest.testPredicate">
+    <configuration name="BoardRepositoryTest.testByPaging" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootboard" />
       <extension name="coverage">
         <pattern>
@@ -328,31 +355,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="kr.ranian.bootboard.persistence" />
       <option name="MAIN_CLASS_NAME" value="kr.ranian.bootboard.persistence.BoardRepositoryTest" />
-      <option name="METHOD_NAME" value="inspect" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Djasypt.encryptor.password=DEV2019" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardRepositoryTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootboard" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="kr.ranian.bootboard.persistence.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="kr.ranian.bootboard.persistence" />
-      <option name="MAIN_CLASS_NAME" value="kr.ranian.bootboard.persistence.BoardRepositoryTest" />
-      <option name="METHOD_NAME" value="testDelete" />
+      <option name="METHOD_NAME" value="testByPaging" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardRepositoryTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardRepositoryTest.testByTitle2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootboard" />
       <extension name="coverage">
         <pattern>
@@ -362,13 +371,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="kr.ranian.bootboard.persistence" />
       <option name="MAIN_CLASS_NAME" value="kr.ranian.bootboard.persistence.BoardRepositoryTest" />
-      <option name="METHOD_NAME" value="testInsert" />
+      <option name="METHOD_NAME" value="testByTitle2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardRepositoryTest.testRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardRepositoryTest.testByTitle3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootboard" />
       <extension name="coverage">
         <pattern>
@@ -378,13 +387,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="kr.ranian.bootboard.persistence" />
       <option name="MAIN_CLASS_NAME" value="kr.ranian.bootboard.persistence.BoardRepositoryTest" />
-      <option name="METHOD_NAME" value="testRead" />
+      <option name="METHOD_NAME" value="testByTitle3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoardRepositoryTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardRepositoryTest.testByWriterWithJPQL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootboard" />
       <extension name="coverage">
         <pattern>
@@ -394,7 +403,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="kr.ranian.bootboard.persistence" />
       <option name="MAIN_CLASS_NAME" value="kr.ranian.bootboard.persistence.BoardRepositoryTest" />
-      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="METHOD_NAME" value="testByWriterWithJPQL" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardRepositoryTest.testPredicate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootboard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kr.ranian.bootboard.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="kr.ranian.bootboard.persistence" />
+      <option name="MAIN_CLASS_NAME" value="kr.ranian.bootboard.persistence.BoardRepositoryTest" />
+      <option name="METHOD_NAME" value="testPredicate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -410,20 +435,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BoardRepositoryTest.inspect" />
-      <item itemvalue="JUnit.BoardRepositoryTest.testInsert" />
-      <item itemvalue="JUnit.BoardRepositoryTest.testRead" />
-      <item itemvalue="JUnit.BoardRepositoryTest.testUpdate" />
-      <item itemvalue="JUnit.BoardRepositoryTest.testDelete" />
       <item itemvalue="Spring Boot.BootboardApplication" />
+      <item itemvalue="JUnit.BoardRepositoryTest.testByWriterWithJPQL" />
+      <item itemvalue="JUnit.BoardRepositoryTest.testByTitle2" />
+      <item itemvalue="JUnit.BoardRepositoryTest.testByTitle3" />
+      <item itemvalue="JUnit.BoardRepositoryTest.testByPaging" />
+      <item itemvalue="JUnit.BoardRepositoryTest.testPredicate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BoardRepositoryTest.testDelete" />
-        <item itemvalue="JUnit.BoardRepositoryTest.testUpdate" />
-        <item itemvalue="JUnit.BoardRepositoryTest.testRead" />
-        <item itemvalue="JUnit.BoardRepositoryTest.testInsert" />
-        <item itemvalue="JUnit.BoardRepositoryTest.inspect" />
+        <item itemvalue="JUnit.BoardRepositoryTest.testPredicate" />
+        <item itemvalue="JUnit.BoardRepositoryTest.testByPaging" />
+        <item itemvalue="JUnit.BoardRepositoryTest.testByTitle3" />
+        <item itemvalue="JUnit.BoardRepositoryTest.testByTitle2" />
+        <item itemvalue="JUnit.BoardRepositoryTest.testByWriterWithJPQL" />
       </list>
     </recent_temporary>
   </component>
@@ -438,43 +463,44 @@
       <option name="presentableId" value="Default" />
       <updated>1569052973264</updated>
       <workItem from="1569052976688" duration="13578000" />
+      <workItem from="1569227948201" duration="10294000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 01m 50s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testBnoPagingSortAndPageTypeTest - 2019.09.23 at 21h 25m 52s.xml">
+      <configuration name="BoardRepositoryTest.testBnoPagingSortAndPageTypeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 05m 48s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByTitleWithJPQL - 2019.09.23 at 21h 39m 23s.xml">
+      <configuration name="BoardRepositoryTest.testByTitleWithJPQL" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 06m 39s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByContentWithJPQL - 2019.09.23 at 21h 42m 36s.xml">
+      <configuration name="BoardRepositoryTest.testByContentWithJPQL" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 07m 00s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByWriterWithJPQL - 2019.09.23 at 21h 46m 37s.xml">
+      <configuration name="BoardRepositoryTest.testByWriterWithJPQL" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 07m 18s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByTitle2 - 2019.09.23 at 21h 54m 30s.xml">
+      <configuration name="BoardRepositoryTest.testByTitle2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 08m 24s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByTitle3 - 2019.09.23 at 22h 00m 58s.xml">
+      <configuration name="BoardRepositoryTest.testByTitle3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testInsert - 2019.09.21 at 22h 08m 45s.xml">
-      <configuration name="BoardRepositoryTest.testInsert" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByTitle3 - 2019.09.23 at 22h 02m 07s.xml">
+      <configuration name="BoardRepositoryTest.testByTitle3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testRead - 2019.09.21 at 22h 11m 15s.xml">
-      <configuration name="BoardRepositoryTest.testRead" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByTitle3 - 2019.09.23 at 22h 02m 33s.xml">
+      <configuration name="BoardRepositoryTest.testByTitle3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testUpdate - 2019.09.21 at 22h 38m 34s.xml">
-      <configuration name="BoardRepositoryTest.testUpdate" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testByPaging - 2019.09.23 at 22h 06m 23s.xml">
+      <configuration name="BoardRepositoryTest.testByPaging" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardRepositoryTest_testDelete - 2019.09.21 at 22h 40m 23s.xml">
-      <configuration name="BoardRepositoryTest.testDelete" configurationId="JUnit" />
+    <history-entry file="BoardRepositoryTest_testPredicate - 2019.09.24 at 15h 14m 16s.xml">
+      <configuration name="BoardRepositoryTest.testPredicate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14092000" />
+    <option name="totallyTimeSpent" value="25531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -498,10 +524,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3299363" />
       <window_info anchor="bottom" id="Inspection Results" order="10" show_stripe_button="false" weight="0.3299363" />
       <window_info anchor="bottom" id="CheckStyle" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -534,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/ServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.8.RELEASE/spring-boot-autoconfigure-2.1.8.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -558,36 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/utils/JasyptTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/persistence/BoardRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/domain/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -595,10 +584,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/persistence/BoardRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/BootboardApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="225">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/utils/JasyptTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootboard/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootboard/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/domain/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -607,33 +634,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bootboard/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        <state relative-caret-position="239">
+          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/persistence/BoardRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/src/main/java/kr/ranian/bootboard/BootboardApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="105" />
           <folding>
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootboard/.gitignore">
+    <entry file="file://$PROJECT_DIR$/bootboard/${target}/target/generated-sources/java/kr/ranian/bootboard/domain/QBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="52">
+          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootboard/src/test/java/kr/ranian/bootboard/persistence/BoardRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="229" column="33" lean-forward="true" selection-start-line="229" selection-start-column="33" selection-end-line="229" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
