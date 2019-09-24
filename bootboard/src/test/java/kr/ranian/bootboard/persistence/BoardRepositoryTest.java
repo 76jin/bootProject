@@ -1,6 +1,8 @@
 package kr.ranian.bootboard.persistence;
 
+import com.querydsl.core.BooleanBuilder;
 import kr.ranian.bootboard.domain.Board;
+import kr.ranian.bootboard.domain.QBoard;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -222,5 +224,33 @@ public class BoardRepositoryTest {
 
         boardRepository.findByPage(pageable)
                 .forEach(board -> System.out.println(board));
+    }
+
+    @Test
+    public void testPredicate() {
+
+        String type = "t";
+        String keyword = "17";
+
+        BooleanBuilder builder = new BooleanBuilder();
+        QBoard board = QBoard.board;
+
+        if (type.equals("t")) {
+            builder.and(board.title.like("%" + keyword + "%"));
+        }
+
+        // bno > 0
+        builder.and((board.bno.gt(0L)));
+
+        Pageable pageable = PageRequest.of(0, 10);
+        Page<Board> result = boardRepository.findAll(builder, pageable);
+
+        System.out.println("PAGE SIZE:" + result.getSize());
+        System.out.println("TOTAL PAGES:" + result.getTotalPages());
+        System.out.println("TOTAL COUNT:" + result.getTotalElements());
+        System.out.println("NEXT:" + result.nextPageable());
+
+        List<Board> list = result.getContent();
+        list.forEach(board1 -> System.out.println(board1));
     }
 }
