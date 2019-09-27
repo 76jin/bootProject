@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout/layout1}">
+
+    <div layout:fragment="content">
+        <h1>Thymeleaf Layout Test</h1>
+        <h2>Hello Page</h2>
+    </div>
+
+    <th:block layout:fragment="script">
+        <script th:inline="javascript">
+            alert("Java script Block!!");
+        </script>

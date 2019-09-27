@@ -86,6 +86,13 @@
             <version>2.0.3.RELEASE</version>
         </dependency>
 
+        <!-- Thymeleaf layout -->
+        <dependency>
+            <groupId>nz.net.ultraq.thymeleaf</groupId>
+            <artifactId>thymeleaf-layout-dialect</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
