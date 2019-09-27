@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.themleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h2>Link Test1</h2>
+
+    <ul>
+        <li><a th:href="@{http://localhost:9000/sample1}">sample1</a></li>
+        <li><a th:href="@{/sample1}">sample1</a></li>
+        <li><a th:href="@{~/sample1}">sample1</a></li>
+        <li><a th:href="@{/sample1(p1='aaa', p2='bbb')}">sample1</a></li>
+    </ul>
+</body>
+</html>
