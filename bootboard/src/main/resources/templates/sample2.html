@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.themleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Thymeleaf Test Page</h1>
+    <h2 th:text="${member}">Thymeleaf Test Page</h2>
+    <div th:utext='${"<h3>" + member.mid + "</h3>"}'></div>
+    <div th:text='${"<h3>" + member.mid + "</h3>"}'></div>
+</body>
+</html>

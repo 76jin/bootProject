@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.themleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf3</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h2>Inline Test1</h2>
+    <table border="1" th:inline="text">
+        <tr>
+            <td>MID</td>
+            <td>MNAME</td>
+            <td>REGDATE</td>
+        </tr>
+        <tr th:each="member : ${list}">
+            <td th:text="${member.mid}">Doe</td>
+            <td th:text="${member.mname}"></td>
+            <td th:text="${#dates.format(member.regdate, 'yyyy-MM-dd')}"></td>
+        </tr>
+    </table>
+
+    <script th:inline="javascript">
+        var result = [[${result}]]
+    </script>
+</body>
+</html>
