@@ -112,6 +112,16 @@
                 formObj.find("[name='page']").val("1");
                 formObj.submit();
             });
+
+            $(".boardLink").click(function (e) {
+                e.preventDefault();
+
+                var boardNo = $(this).attr("href");
+
+                formObj.attr("action", [[@{'/boards/view'}]]);
+                formObj.append("<input type='hidden' name='bno' value='" + boardNo + "'>");
+                formObj.submit();
+            });
         });
     </script>
 </th:block>
