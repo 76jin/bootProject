@@ -4,6 +4,9 @@
 
 <div layout:fragment="content">
     <div class="panel-heading">List Page</div>
+    <div class="panel-body pull-right">
+        <h3><a class="label label-default" th:href="@{register}">Register</a> </h3>
+    </div>
     <div class="panel-body">
         <div th:with="result=${result.result}">
 
@@ -78,6 +81,17 @@
 
 <th:block layout:fragment="script">
     <script th:inline="javascript">
+        $(window).on('load', function () {
+            var msg = [[${msg}]];
+
+            console.log("msg:" + msg);
+
+            if (msg == 'success') {
+                alert("정상적으로 처리되었습니다.");
+                var stateObj = { msg : "" };
+            }
+        });
+
         $(document).ready(function () {
             var formObj = $("#f1");
 
