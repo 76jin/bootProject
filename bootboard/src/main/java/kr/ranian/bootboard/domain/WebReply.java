@@ -1,5 +1,6 @@
 package kr.ranian.bootboard.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,33 +10,32 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
-import java.util.List;
 
 /**
- * Created by ranian129@gmail.com on 2019-09-28
+ * Created by ranian129@gmail.com on 2019-10-04
  * Blog : http://76jin.tistory.com
  * Github : http://github.com/76jin
  */
 @Getter
 @Setter
-@ToString(exclude = "replies")
 @Entity
-@Table(name = "tbl_webboards")
-@EqualsAndHashCode(of = "bno")
-public class WebBoard {
+@Table(name = "tbl_webreplies")
+@EqualsAndHashCode(of = "rno")
+@ToString (exclude = "board")
+public class WebReply {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long bno;
-    private String title;
-    private String writer;
-    private String content;
+    private Long rno;
+    private String replyText;
+    private String replyer;
 
     @CreationTimestamp
     private Timestamp regdate;
     @UpdateTimestamp
     private Timestamp updatedate;
 
-    @OneToMany(mappedBy = "board", fetch = FetchType.LAZY)
-    private List<WebReply> replies;
+    @JsonIgnore
+    @ManyToOne(fetch = FetchType.LAZY)
+    private WebBoard board;
 }
