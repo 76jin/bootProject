@@ -64,7 +64,7 @@ public class WebReplyController {
     }
 
     @Transactional
-    @PutMapping("/{bno}x")
+    @PutMapping("/{bno}")
     public ResponseEntity<List<WebReply>> modify(
             @PathVariable("bno") Long bno,
             @RequestBody WebReply reply) {
