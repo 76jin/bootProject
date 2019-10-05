@@ -31,6 +31,14 @@ var replyManager = (function () {
 
   var remove = function (obj, callbcak) {
     console.log("remove......");
+
+    $.ajax({
+      type: 'delete',
+      url: '/replies/' + obj.bno + '/' + obj.rno,
+      dataType: 'json',
+      contentType: 'application/json',
+      success: callbcak
+    });
   };
 
   return {
