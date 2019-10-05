@@ -52,11 +52,67 @@
         </div>
     </div>
 
+    <div class="container">
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr>
+                <th>RNO</th>
+                <th>Reply Text</th>
+                <th>Replyer</th>
+                <th>Replay Date</th>
+            </tr>
+            </thead>
+            <tbody id="replyTable">
+            </tbody>
+        </table>
+    </div>
+
 </div>
 <!-- end fragment -->
 
 <th:block layout:fragment="script">
+
+    <script th:inline="javascript" th:src="@{'/js/reply.js'}"></script>
+
     <script th:inline="javascript">
+        // console.log(replyManager);
+
+        $(document).ready(function () {
+            // load replies
+            (function () {
+                replyManager.getAll([[${vo.bno}]], printList);
+            })();
+
+            function printList(list) {
+                var str = "";
+                var replyObj;
+                for (var i = 0; i < list.length; i++) {
+                    replyObj = list[i];
+
+                    str += "<tr>" +
+                        "<td>" + replyObj.rno + "</td>" +
+                        "<td>" + replyObj.replyText + "</td>" +
+                        "<td>" + replyObj.replyer + "</td>" +
+                        "<td>" + formatDate(replyObj.regDate) + "</td>" +
+                        "</tr>";
+                }
+                $("#replyTable").html(str);
+            }
+
+            function formatDate(timeValue) {
+                var date = new Date(timeValue);
+                return makeFromatDate(date, '-');
+            }
+
+            function makeFromatDate(date, separator) {
+                var year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                month = month >= 10 ? month : '0' + month;
+                var day = date.getDate();
+
+                return year + separator + month + separator + day;
+            }
+        });
 
     </script>
 </th:block>
