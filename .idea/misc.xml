@@ -9,11 +9,13 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/bootboard" />
+    <file type="web" url="file://$PROJECT_DIR$/bootsecurity" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/bootboard/pom.xml" />
+        <option value="$PROJECT_DIR$/bootsecurity/pom.xml" />
       </list>
     </option>
   </component>
