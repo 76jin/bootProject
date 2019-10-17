@@ -1,6 +1,7 @@
 package kr.ranian.bootboard.Controller;
 
 import kr.ranian.bootboard.domain.WebBoard;
+import kr.ranian.bootboard.persistence.CustomCrudRepository;
 import kr.ranian.bootboard.persistence.WebBoardRepository;
 import kr.ranian.bootboard.vo.PageMaker;
 import kr.ranian.bootboard.vo.PageVO;
@@ -27,7 +28,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 public class WebBoardController {
 
     @Autowired
-    private WebBoardRepository repo;
+//    private WebBoardRepository repo;
+    private CustomCrudRepository repo;
 
 /*
     @GetMapping("/list")
@@ -39,6 +41,11 @@ public class WebBoardController {
         log.info("list() called..." + page);
     }
 */
+    @GetMapping("/register")
+    public void registerGet(@ModelAttribute("vo") WebBoard vo) {
+        log.info("register get");
+    }
+/*
     @GetMapping("/list")
     public void list(@ModelAttribute("pageVO") PageVO vo, Model model) {
         Pageable page = vo.makePageable(0, "bno");
@@ -52,10 +59,19 @@ public class WebBoardController {
 
         model.addAttribute("result", new PageMaker<>(result));
     }
+*/
+    @GetMapping("/list")
+    public void list(@ModelAttribute("pageVO") PageVO vo, Model model) {
+        Pageable page = vo.makePageable(0, "bno");
 
-    @GetMapping("/register")
-    public void registerGet(@ModelAttribute("vo") WebBoard vo) {
-        log.info("register get");
+        Page<Object[]> result = repo.getCustomPage(vo.getType(), vo.getKeyword(), page);
+
+        log.info("" + page);
+        log.info("" + result);
+
+        log.info("Total Page Number:" + result.getTotalPages());
+
+        model.addAttribute("result", new PageMaker<>(result));
     }
 
     @PostMapping("/register")
