@@ -9,7 +9,10 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
+import javax.sql.DataSource;
 
 /**
  * Created by ranian129@gmail.com on 2019-10-17
@@ -20,11 +23,19 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+//    @Autowired
+//    DataSource dataSource;
 
+    // 3. use custom class
+    @Autowired
+    SampleUserService sampleUserService;
+
+//    @Bean
+//    public PasswordEncoder passwordEncoder() {
+//        return new BCryptPasswordEncoder();
+//    }
+/*
+    // 1. use inMemory
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         log.info("build Auth global...");
@@ -33,6 +44,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .password(passwordEncoder().encode("1111"))
                 .roles(MemberRole.ROLE_MANAGER);
     }
+*/
+/*
+
+    // 2. use JDBC
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        log.info("build Auth global...");
+
+        String query1 = "select uid username, upw password, true enabled from tbl_test_members where uid = ?";
+        String query2 = "select member uid, role_name role from tbl_test_member_roles where member = ?";
+
+        auth.jdbcAuthentication()
+                .dataSource(dataSource)
+                .passwordEncoder(NoOpPasswordEncoder.getInstance())
+                .usersByUsernameQuery(query1)
+                .rolePrefix("ROLE_")
+                .authoritiesByUsernameQuery(query2);
+    }
+*/
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -51,5 +81,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         // 세션 무효화
         http.logout().logoutUrl("/logout").invalidateHttpSession(true);
+
+        http.userDetailsService(sampleUserService);
     }
 }
