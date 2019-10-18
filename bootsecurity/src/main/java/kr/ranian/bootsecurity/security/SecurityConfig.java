@@ -34,10 +34,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     SampleUserService sampleUserService;
 
-//    @Bean
-//    public PasswordEncoder passwordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 /*
     // 1. use inMemory
     @Autowired
@@ -68,6 +68,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 */
 
+    // 3. 커스텀 클래스 사용.
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 //        super.configure(http);
@@ -97,6 +98,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         JdbcTokenRepositoryImpl repo = new JdbcTokenRepositoryImpl();
         repo.setDataSource(dataSource);
         return repo;
+    }
+
+    //  4. passwordEncoder 추가.
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        log.info("### build Auth global......");
+
+        auth.userDetailsService(sampleUserService).passwordEncoder(passwordEncoder());
     }
 
 

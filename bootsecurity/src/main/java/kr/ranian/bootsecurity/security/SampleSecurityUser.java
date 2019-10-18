@@ -27,8 +27,8 @@ public class SampleSecurityUser extends User {
     private Member member;
 
     public SampleSecurityUser(Member member) {
-//        super(member.getUid(), member.getUpw(), makeGrantedAuthority(member.getRoles()));
-        super(member.getUid(), "{noop}" + member.getUpw(), makeGrantedAuthority(member.getRoles()));
+//        super(member.getUid(), "{noop}" + member.getUpw(), makeGrantedAuthority(member.getRoles()));
+        super(member.getUid(), member.getUpw(), makeGrantedAuthority(member.getRoles()));
         this.member = member;
     }
 
