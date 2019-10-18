@@ -20,6 +20,10 @@ import javax.persistence.*;
 @ToString
 public class MemberRole {
 
+    public static final String ROLE_GUEST = "GUEST";
+    public static final String ROLE_MANAGER = "MANAGER";
+    public static final String ROLE_ADMIN = "ADMIN";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long fno;
