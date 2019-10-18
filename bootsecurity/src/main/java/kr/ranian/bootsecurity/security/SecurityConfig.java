@@ -11,6 +11,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
 import javax.sql.DataSource;
 
@@ -23,8 +25,8 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-//    @Autowired
-//    DataSource dataSource;
+    @Autowired
+    DataSource dataSource;
 
     // 3. use custom class
     @Autowired
@@ -82,6 +84,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // 세션 무효화
         http.logout().logoutUrl("/logout").invalidateHttpSession(true);
 
-        http.userDetailsService(sampleUserService);
+//        http.userDetailsService(sampleUserService);
+//        http.rememberMe().key("sample").userDetailsService(sampleUserService);
+        http.rememberMe().key("sample").userDetailsService(sampleUserService)
+                .tokenRepository(getJDBCRepository())
+                .tokenValiditySeconds(60 * 60 * 24);    // cookie expired : 24 hours
     }
+
+    private PersistentTokenRepository getJDBCRepository() {
+        JdbcTokenRepositoryImpl repo = new JdbcTokenRepositoryImpl();
+        repo.setDataSource(dataSource);
+        return repo;
+    }
+
+
 }
